@@ -64,7 +64,7 @@ This solution for storing dotfiles is inspired by [this comment][1] on Hacker Ne
     ```sh
     brew bundle dump -f
     ```
-4. Use basic git commands to add remote commit changes. You should add all the files here you wan't to include in your dotfiles (also just created Brewfile)
+4. Use basic git commands to add remote commit changes. You should add all the files here you want to include in your dotfiles (also the newly created Brewfile)
     ```sh
     dotfiles remote add origin https://github.com/<USERNAME>/dotfiles.git
     dotfiles commit -m "feat: initial commit"
