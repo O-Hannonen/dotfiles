@@ -3,20 +3,29 @@ This solution for storing dotfiles is inspired by [this comment][1] on Hacker Ne
 
 ## Quick Start 🚀
 ### Initial setup
-All of the steps below require a `dotfile` alias. The `.bashrc` and `.zshrc` in this repo already contain the configuration, but if you don't have the configurations pulled from here, you'll have to set it yourself. 
+1. Setup alias
+    All of the steps below require a `dotfile` alias. The `.bashrc` and `.zshrc` in this repo already contain the configuration, but if you don't have the configurations pulled from here, you'll have to set it yourself. 
 
-For bash
-```sh 
-echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.bashrc
-```
-For zsh
-```sh
-echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
-```
-For current scope
-```sh
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-```
+    For bash
+    ```sh 
+    echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.bashrc
+    ```
+    For zsh
+    ```sh
+    echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
+    ```
+    For current scope
+    ```sh
+    alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+    ```
+2. Install homebrew
+    ```sh
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+3. Install brew bundle
+    ```sh
+    brew tap Homebrew/bundle
+    ```
 
 
 ### Usage 
@@ -27,6 +36,10 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 2. Checkout the content
     ```sh
     dotfiles checkout
+    ```
+3. Install contents of Brefile
+    ```sh
+    brew bundle install
     ```
 
 ### Updating 
