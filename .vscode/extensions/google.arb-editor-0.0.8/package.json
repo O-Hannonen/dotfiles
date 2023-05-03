@@ -1,0 +1,87 @@
+{
+	"name": "arb-editor",
+	"publisher": "Google",
+	"displayName": "ARB Editor",
+	"description": "Editor for Application Resource Bundle files, used for localization.",
+	"version": "0.0.8",
+	"engines": {
+		"vscode": "^1.72.2"
+	},
+	"homepage": "https://github.com/google/arb-editor",
+	"bugs": {
+		"url": "https://github.com/google/arb-editor/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/google/arb-editor"
+	},
+	"license": "Apache-2.0",
+	"author": "Moritz Sümmermann <mosum@google.com>",
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:json"
+	],
+	"icon": "media/logo.png",
+	"main": "./out/extension.js",
+	"contributes": {
+		"jsonValidation": [
+			{
+				"fileMatch": "*.arb",
+				"url": "./schemas/arb.json"
+			}
+		],
+		"languages": [
+			{
+				"id": "json",
+				"extensions": [
+					"arb"
+				]
+			}
+		]
+	},
+	"keywords": [
+		"Flutter",
+		"arb",
+		"localization",
+		"l10n",
+		"i18n",
+		"internationalization"
+	],
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^8.0.0",
+		"@types/mocha": "^10.0.0",
+		"@types/node": "16.x",
+		"@types/vscode": "^1.72.2",
+		"@typescript-eslint/eslint-plugin": "^5.42.0",
+		"@typescript-eslint/parser": "^5.42.0",
+		"@vscode/test-electron": "^2.2.0",
+		"eslint": "^8.26.0",
+		"glob": "^8.0.3",
+		"mocha": "^10.1.0",
+		"typescript": "^4.8.4"
+	},
+	"dependencies": {
+		"jsonc-parser": "^3.2.0",
+		"xregexp": "^5.1.1"
+	},
+	"__metadata": {
+		"id": "8e809999-ace7-4aa3-85bb-8b7351ab5d7b",
+		"publisherId": "93a45bde-b507-401c-9deb-7a098ebcded8",
+		"publisherDisplayName": "Google",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1683115531008,
+		"preRelease": false
+	}
+}

@@ -1,0 +1,17 @@
+[user]
+	email = onnari11@gmail.com
+	name = Onnimanni Hannonen
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[core]
+	editor = nano
+	askpass = git-gui--askpass
+[pager]
+	branch = false
+[pull]
+	rebase = false
+[alias]
+	zip = archive --format=zip HEAD
