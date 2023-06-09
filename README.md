@@ -3,8 +3,8 @@ This solution for storing dotfiles is inspired by [this comment][1] on Hacker Ne
 
 ## Quick Start 🚀
 ### Initial setup
-1. Setup alias
-    All of the steps below require a `dotfile` alias. The `.bashrc` and `.zshrc` in this repo already contain the configuration, but if you don't have the configurations pulled from here, you'll have to set it yourself. 
+You MUST complete these few steps before attempting to follow any of the instructions below. To initialize your machine:
+1. Add a `dotfile` alias. The `.bashrc` and `.zshrc` in this repo already contain the configuration, but if you don't have the configurations pulled from here, you'll have to set it yourself. 
 
     For bash
     ```sh 
@@ -60,12 +60,17 @@ This solution for storing dotfiles is inspired by [this comment][1] on Hacker Ne
     ```sh
     dotfiles config --local status.showUntrackedFiles no
     ```
-3. Use basic git commands to add remote commit changes
+3. Create Brewfile which contains everything you've installed with homebrew
+    ```sh
+    brew bundle dump -f
+    ```
+4. Use basic git commands to add remote commit changes. You should add all the files here you want to include in your dotfiles (also the newly created Brewfile)
     ```sh
     dotfiles remote add origin https://github.com/<USERNAME>/dotfiles.git
     dotfiles commit -m "feat: initial commit"
     dotfiles push -u origin main
     ```
+
     
 
 
