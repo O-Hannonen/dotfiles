@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>5C98AB94-F480-4B99-BAD6-7BA03A689315</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>git-personal</string>
+			<key>text</key>
+			<string>Open personal git repo</string>
+			<key>url</key>
+			<string>https://github.com/O-Hannonen/{query}</string>
+		</dict>
+		<key>5FD89883-DE19-47EE-ADB3-E5ED5B2475CA</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>pub</string>
+			<key>text</key>
+			<string>Open package on pub.dev</string>
+			<key>url</key>
+			<string>https://pub.dev/packages/{query}</string>
+		</dict>
+		<key>A3B6D179-37CD-4581-A830-1808C88DECA2</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>git-mankeli</string>
+			<key>text</key>
+			<string>Open Mankeli-Solutions github repo</string>
+			<key>url</key>
+			<string>https://github.com/Mankeli-Software/{query}</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
