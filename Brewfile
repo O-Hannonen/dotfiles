@@ -2,7 +2,6 @@ tap "homebrew/bundle"
 tap "homebrew/core"
 brew "flyctl"
 brew "git"
-brew "git-filter-repo"
 brew "inetutils"
 brew "lcov"
 brew "node", link: false
