@@ -1,6 +1,5 @@
 tap "homebrew/bundle"
 tap "homebrew/core"
-brew "flyctl"
 brew "git"
 brew "inetutils"
 brew "lcov"
