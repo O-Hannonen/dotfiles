@@ -2,7 +2,6 @@ tap "homebrew/bundle"
 tap "homebrew/core"
 brew "git"
 brew "inetutils"
-brew "lcov"
 brew "node", link: false
 brew "python@3.10"
 cask "alfred"
