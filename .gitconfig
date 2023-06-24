@@ -20,6 +20,9 @@
 [pull]
   rebase = false
 [alias]
+  # Deletes a file from git history
+  erase-file = filter-repo --invert-paths --path
+
   # List available aliases
   aliases = !git config --get-regexp alias | sed -re 's/alias\\.(\\S*)\\s(.*)$/\\1 = \\2/g'
 
