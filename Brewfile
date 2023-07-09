@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/core"
 brew "git"
+brew "docker"
 brew "inetutils"
 brew "node", link: false
 brew "python@3.10"
