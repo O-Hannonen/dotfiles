@@ -66,7 +66,7 @@ You MUST complete these few steps before attempting to follow any of the instruc
     ```
 4. Use basic git commands to add remote commit changes. You should add all the files here you want to include in your dotfiles (also the newly created Brewfile)
     ```sh
-    dotfiles remote add origin https://github.com/<USERNAME>/dotfiles.git
+    dotfiles remote add origin git@github.com:<USERNAME>/dotfiles.git
     dotfiles commit -m "feat: initial commit"
     dotfiles push -u origin main
     ```
