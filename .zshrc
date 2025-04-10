@@ -4,7 +4,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/om/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -79,7 +79,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH="$PATH:/Users/om/Development/flutter/bin:/Users/om/Development/apache-maven-3.9.1/bin"
+export PATH="$PATH:$HOME/Development/flutter/bin:$HOME/Development/apache-maven-3.9.1/bin"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -109,7 +109,7 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 ## [Completion] 
 ## Completion scripts setup. Remove the following line to uninstall
-[[ -f /Users/om/.dart-cli-completion/zsh-config.zsh ]] && . /Users/om/.dart-cli-completion/zsh-config.zsh || true
+[[ -f $HOME/.dart-cli-completion/zsh-config.zsh ]] && . $HOME/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
 
@@ -118,4 +118,4 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-alias dotfiles='/usr/bin/git --git-dir=/Users/om/.dotfiles/ --work-tree=/Users/om'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
